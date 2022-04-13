@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+        
+    <form action="/" class="login">
+        <img class="logo" src="https://raw.githubusercontent.com/platzi/curso-frontend-developer-practico/main/logos/logo_yard_sale.svg" alt="YardSale_logo">
+        
+        <div class="data">
+            <div class="input">
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email" placeholder="camilayokoo@gmail.com" required>
+            </div>
+
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="* * * * * * * * * * * *" required>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <input type="submit" value="Log In" class="primary_button logIn_button">
+            <a href="/pages/passwordRecovery.html">Forgot my password</a>
+        </div>
+
+    </form>
+    
+    <footer class="login_footer">
+        <input type="button" value="Sign Up" class="primary_button signUp_button">
+    </footer>
+
+</body>
+</html>
