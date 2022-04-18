@@ -1,5 +1,8 @@
 /* imports */
 
+/* Iconos */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
 /* Quicksand Font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
@@ -10,7 +13,11 @@
     /* Color palette */
     --very_light_pink: #C7C7C7;
     --hospital_green: #ACD9B2;
+    --salmonRed: #d04949;
+    --salmonRed_opacity: #d049495f;
     --white: #ffffff;
+    --gray: #7d7c7c;
+    --gray_light: #7d7c7c69;
     --dark: #232830;
     --black: #000000;
 
@@ -26,7 +33,6 @@
     --h1_title: bold var(--h1_fontSize) 'Quicksand', sans-serif;
     --h1_body: var(--h1_fontSize) 'Quicksand', sans-serif;
     --h1_price: bold var(--h1_fontSize) 'Roboto', sans-serif;
-    --h1_light: var(--h1_title);;
 }
 
 html{
@@ -39,9 +45,8 @@ body{
     padding: 20rem;
 
     display: grid;
-    grid-template-rows:1fr auto;
     place-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     background: var(--white);
 }
@@ -58,15 +63,18 @@ body{
     text-decoration: none;
 }
 
-.login{
+.form{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 52rem;
+
+    width: 90%;
+    max-width: 430rem;
 }
 
 .logo{
-    height: 50rem;
+    height: 46rem;
 }
 
 .data{
@@ -78,6 +86,8 @@ body{
 }
 
 .input{
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     gap: 8rem;
@@ -94,6 +104,8 @@ body{
 }
 
 .actions{
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,19 +119,307 @@ body{
     background: var(--hospital_green);
 }
 
+.actions input:hover{
+    color: var(--hospital_green);
+    background: var(--white);
+}
+
 .actions a{
     color: var(--hospital_green);
 }
 
 .primary_button{
-    width: 350rem;
+    width: 100%;
+
     padding: 20rem;
     border-radius: 10rem;
     font: var(--h1_title);
+
+    cursor: pointer;
+    border:4rem solid var(--hospital_green);
 }
 
 .signUp_button{
-    border:4rem solid var(--hospital_green);
     color: var(--hospital_green);
     background: var(--white);
+}
+
+.signUp_button:hover{
+    background: var(--hospital_green);
+    color: var(--white);
+}
+
+.login_footer{
+    width: 100%;
+}
+
+#invalid_text{
+    color: var(--salmonRed);
+}
+
+#invalid_border{
+    border: 2rem solid var(--salmonRed);
+    background: var(--salmonRed_opacity);
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 14rem;
+
+    align-items: center;
+    text-align: center;
+}
+
+.info h3{
+    font:bold 24rem 'Quicksand', sans-serif;
+}
+
+.info p{
+    font:22rem 'Quicksand', sans-serif;
+    color: var(--gray);
+}
+
+.form i{
+    font-size: 100rem;
+    color: var(--hospital_green);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    padding: 18rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--white);
+    box-shadow: 0 4rem 12rem #00000029;
+}
+
+nav i{
+    font-size: 26rem;
+    color: var(--dark);
+}
+
+nav img{
+    height: 36rem;
+}
+
+.box_search{
+    position: absolute;
+    top: 110rem;
+    z-index: 2;
+
+    width: 90%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+
+    background: var(--white);
+}
+
+.search{
+    width: 100%;
+    padding: 14rem;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12rem;
+
+    font-size: 20rem;
+
+    border-radius: 10rem;
+    background: var(--textInputField);
+    color: var(--gray_light);
+}
+
+.search input{
+    width: 100%;
+
+    color: var(--gray);
+    background: none;
+    font: bold 18rem 'Quicksand', sans-serif;
+}
+
+.search input::placeholder{
+    color: var(--gray_light);
+}
+
+.category{
+    width: 100%;
+    padding-top: 6rem;
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 10rem;
+
+    font:var(--h1_title);
+    color: var(--gray_light);
+}
+
+.category p label{
+    cursor: pointer;
+    padding: 4rem 12rem;
+
+    border-radius: 8rem;
+}
+
+.category p input{
+    display: none;
+}
+
+.category p input:checked + label{
+    border: 2rem solid var(--hospital_green);
+    color: var(--hospital_green);
+}
+
+.category p input:not(:checked) + label{
+    border: none;
+    color: var(--gray_light);
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+
+    font: bold 20rem 'Quicksand', sans-serif;
+}
+
+.filter select{
+    display: flex;
+    align-items: center;
+
+    font-size: 20rem;
+    color: var(--gray_light);
+}
+
+.product_list{
+    position: absolute;
+    top: 290rem;
+    z-index: 1;
+    
+    width: 90%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20rem;
+
+    padding-bottom: 18rem;
+}
+
+.product_list li{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+
+    font: 16rem 'Quicksand', sans-serif;
+    color: var(--gray);
+}
+
+.product_list li > img{
+    height: 200rem;
+    border-radius: 10rem;
+}
+
+.product_list li > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_list li > div > p strong{
+    font-size: 18rem;
+    color: var(--dark);
+}
+
+.cart{
+    width: 36rem;
+    height: 36rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart label{
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.cart label i{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+}
+
+.cart input:checked ~ label .fa-shopping-cart{
+    display: flex;
+
+    color: var(--hospital_green);
+    background: none;
+}
+
+.cart input:checked ~ label .fa-cart-plus{
+    display: none;
+}
+
+.cart input:not(:checked) ~ label .fa-shopping-cart{
+    display: none;
+}
+
+.cart input:not(:checked) ~ label .fa-cart-plus{
+    display: flex;
+
+    color: var(--white);
+    background: var(--hospital_green);
+}
+
+@media(max-width: 710px){
+    .form{
+        position: absolute;
+        top: 110rem;
+        align-items: flex-start;
+    }
+    
+    .signUp_button{
+        position: fixed;
+        bottom: 40rem;
+        
+        width: 80%;
+    }
+
+    .category{
+        padding-bottom: 20rem;
+        overflow-x: scroll;
+    }
+
+    .product_list{
+        top: 320rem;
+        justify-content: center;
+    }
+
+    .product_list li img{
+        height: 160rem;
+    }
 }

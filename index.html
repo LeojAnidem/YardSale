@@ -9,6 +9,268 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    
+    <nav>
+        <i class="fas fa-bars"></i>
+        <img src="https://raw.githubusercontent.com/platzi/curso-frontend-developer-practico/main/logos/logo_yard_sale.svg" alt="YardSale_logo">
+        <i class="fas fa-shopping-cart"></i>
+    </nav>
+
+    <div class="box_search">
+        <div class="search">
+            <label for="search"><i class="fas fa-search"></i></label>
+            <input type="text" name="search" id="search" placeholder="Search product">
+        </div>
+
+        <form class="category">
+            <p>
+                <input type="radio" value="All" name="category" id="option1" checked>
+                <label for="option1">All</label>                
+            </p>
+            
+            <p>
+                <input type="radio" value="Clothes" name="category" id="option2">
+                <label for="option2">Clothes</label>
+            </p>
+
+            <p>
+                <input type="radio" value="Electronics" name="category" id="option3">
+                <label for="option3">Electronics</label>
+            </p>
+
+            <p>
+                <input type="radio" value="Furniture" name="category" id="option4">
+                <label for="option4">Furniture</label>
+            </p>
+
+            <p>
+                <input type="radio" value="Toys" name="category" id="option5">
+                <label for="option5">Toys</label>
+            </p>
+        </form>
+
+        <div class="filter">
+            <strong>Order:</strong>
+
+            <select name="filter" id="filter">
+                <option value="default">Most Recent</option>
+            </select>
+
+            <label for="filter">
+                <i class="fas fa-angle-down"></i>
+            </label>
+        </div>
+    </div>
+
+    <ul class="product_list">
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Round shelf
+                </p>
+
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart1">
+                    <label for="cart1">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div>                
+            </div>
+        </li>
+
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Retro refrigerator
+                </p>
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart2">
+                    <label for="cart2">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div> 
+            </div>
+        </li>
+
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Round shelf
+                </p>
+
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart3">
+                    <label for="cart3">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div>                 
+            </div>
+        </li>
+
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Retro refrigerator
+                </p>
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart4">
+                    <label for="cart4">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div> 
+            </div>
+        </li>
+
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Round shelf
+                </p>
+
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart5">
+                    <label for="cart5">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div>                
+            </div>
+        </li>
+
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Retro refrigerator
+                </p>
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart6">
+                    <label for="cart6">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div> 
+            </div>
+        </li>
+
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Round shelf
+                </p>
+
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart7">
+                    <label for="cart7">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div>                 
+            </div>
+        </li>
+
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Retro refrigerator
+                </p>
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart8">
+                    <label for="cart8">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div> 
+            </div>
+        </li>
+
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Round shelf
+                </p>
+
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart9">
+                    <label for="cart9">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div>                
+            </div>
+        </li>
+
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Retro refrigerator
+                </p>
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart10">
+                    <label for="cart10">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div> 
+            </div>
+        </li>
+
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Round shelf
+                </p>
+
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart11">
+                    <label for="cart11">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div>                 
+            </div>
+        </li>
+
+        <li>
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <div>
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Retro refrigerator
+                </p>
+                <div class="cart">
+                    <input type="checkbox" name="cart" id="cart12">
+                    <label for="cart12">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-cart-plus"></i>
+                    </label>
+                </div> 
+            </div>
+        </li>
+    </ul>
 </body>
 </html>

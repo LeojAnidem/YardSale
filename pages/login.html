@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>YardSale</title>
 
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
         
-    <form action="/" class="login">
+    <form action="/index.html" class="form">
         <img class="logo" src="https://raw.githubusercontent.com/platzi/curso-frontend-developer-practico/main/logos/logo_yard_sale.svg" alt="YardSale_logo">
         
         <div class="data">
@@ -30,11 +30,10 @@
             <a href="/pages/passwordRecovery.html">Forgot my password</a>
         </div>
 
-    </form>
-    
-    <footer class="login_footer">
-        <input type="button" value="Sign Up" class="primary_button signUp_button">
-    </footer>
+        <div class="login_footer">
+            <input type="button" value="Sign Up" class="primary_button signUp_button" onclick="location.href='/pages/register.html'">
+        </div>
 
+    </form>
 </body>
 </html>

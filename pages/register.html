@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YardSale</title>
+
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <nav>
+        <i class="fas fa-bars"></i>
+        <img src="https://raw.githubusercontent.com/platzi/curso-frontend-developer-practico/main/logos/logo_yard_sale.svg" alt="YardSale_logo">
+        <i class="fas fa-shopping-cart"></i>
+    </nav>
+
+    <form action="/pages/login.html" class="form">
+        <div class="info">
+            <h3>My Account</h3>
+        </div>
+
+        <div class="data">
+            <div class="input">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Camila Yokoo" required>
+            </div>
+            
+            <div class="input">
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email" placeholder="camilayokoo@gmail.com" required>
+            </div>
+            
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="* * * * * * * * * * * *" required>
+            </div>
+        </div>
+
+        <div class="actions">
+            <input type="submit" value="Create account" class="primary_button signUp_button">
+        </div>
+    </form>
+</body>
+</html>
