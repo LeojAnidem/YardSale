@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YardSale</title>
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
+
 <body>
+    <input type="checkbox" name="productDetail_panel" id="productDetail_panel">
+    <input type="checkbox" name="shoping_cart" id="shoping_cart">
+
     <nav>
-        <section class="navbar_content">
-            <i class="fas fa-bars"></i>
+        <div class="navbar_content">
+            <div class="items_left">
+                <input type="checkbox" name="bars" id="bars_optMobile">
+                <label for="bars_optMobile">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <div class="optMobile_panel">
+                    <div class="close">
+                        <label for="bars_optMobile">
+                            <i class="fas fa-times"></i>
+                        </label>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a href="/pages/myOrders.html">My orders</a>
+                        </li>
+
+                        <li>
+                            <a href="/pages/register.html">My account</a>
+                        </li>
+                    </ul>
+
+                    <div class="panelMobile_footer">
+                        <p>camilayokoo@gmail.com</p>
+                        <a href="/pages/login.html">Sign Out</a>
+                    </div>
+                </div>
+            </div>
             
-            <img src="https://raw.githubusercontent.com/platzi/curso-frontend-developer-practico/main/logos/logo_yard_sale.svg" alt="YardSale_logo">
-            
-            <ul class="navbar_items">
+            <a href="/">
+                <img src="https://raw.githubusercontent.com/platzi/curso-frontend-developer-practico/main/logos/logo_yard_sale.svg" alt="YardSale_logo">
+                <strong>Shoping cart</strong>
+            </a>
+
+            <ul class="items_right">
                 <li class="signIn_email">
                     <input type="checkbox" name="email_check" id="email_check">
                     <label for="email_check">
@@ -41,15 +77,160 @@
                 </li>
                 
                 <li class="shoping_cart">
-                    <i class="fas fa-shopping-cart"></i>
+                    <label for="shoping_cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </label>
                 </li>
             </ul>
-        </section>
+        </div>
     </nav>
 
-    <div class="box_search">
+    <div class="shopingCart_panel">
+        <ul class="cart_items">
+            <li>
+                <input type="checkbox" name="remove_item" id="remove_item1">
+                <div class="product">
+                    <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+                    <p>
+                        Round shelf
+                    </p>
+                </div>
+
+                <div class="message">
+                    <strong>REMOVE FROM CART</strong>
+                </div>
+
+                <div class="price">
+                    <strong>$ 120,00</strong>
+                    <label for="remove_item1">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="remove_item" id="remove_item2">
+                <div class="product">
+                    <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+                    <p>
+                        Round shelf
+                    </p>
+                </div>
+
+                <div class="message">
+                    <strong>REMOVE FROM CART</strong>
+                </div>
+
+                <div class="price">
+                    <strong>$ 120,00</strong>
+                    <label for="remove_item2">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="remove_item" id="remove_item3">
+                <div class="product">
+                    <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+                    <p>
+                        Round shelf
+                    </p>
+                </div>
+
+                <div class="message">
+                    <strong>REMOVE FROM CART</strong>
+                </div>
+
+                <div class="price">
+                    <strong>$ 120,00</strong>
+                    <label for="remove_item3">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="remove_item" id="remove_item4">
+                <div class="product">
+                    <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+                    <p>
+                        Round shelf
+                    </p>
+                </div>
+
+                <div class="message">
+                    <strong>REMOVE FROM CART</strong>
+                </div>
+
+                <div class="price">
+                    <strong>$ 120,00</strong>
+                    <label for="remove_item4">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+            </li>
+
+            <li>
+                <input type="checkbox" name="remove_item" id="remove_item5">
+                <div class="product">
+                    <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+                    <p>
+                        Round shelf
+                    </p>
+                </div>
+
+                <div class="message">
+                    <strong>REMOVE FROM CART</strong>
+                </div>
+
+                <div class="price">
+                    <strong>$ 120,00</strong>
+                    <label for="remove_item5">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+            </li>
+            
+            <li>
+                <input type="checkbox" name="remove_item" id="remove_item6">
+                <div class="product">
+                    <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+                    <p>
+                        Round shelf
+                    </p>
+                </div>
+                
+                <div class="message">
+                    <strong>REMOVE FROM CART</strong>
+                </div>
+
+                <div class="price">
+                    <strong>$ 120,00</strong>
+                    <label for="remove_item6">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+            </li>
+        </ul>
+
+        <div class="footer_panel">
+            <div class="price_total">
+                <p>Total</p>
+                <strong>$ 560.00</strong>
+            </div>
+            
+            <div class="actions">
+                <input type="button" value="Checkout" class="primary_button signUp_button">
+            </div>
+        </div>
+    </div>
+
+    <section class="box_search">
         <div class="search">
-            <label for="search"><i class="fas fa-search"></i></label>
+            <label for="search">
+                <i class="fas fa-search"></i>
+            </label>
             <input type="text" name="search" id="search" placeholder="Search product">
         </div>
 
@@ -91,11 +272,51 @@
                 <i class="fas fa-angle-down"></i>
             </label>
         </div>
-    </div>
+    </section>
+
+    <section class="product_detail">
+        
+        <label class="close" for="productDetail_panel">
+            <i class="fas fa-times"></i>
+        </label>
+
+        <div class="img_carrusel">
+            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+        </div>
+
+        <div class="detail space">
+            <div class="title">
+                <p>
+                    <strong>$ 120,00</strong><br>
+                    Round shelf
+                </p>
+            </div>
+
+            <div class="content">
+                <p>
+                    With its functional and practical interior,
+                    this refrigerator also fulfills a decorative
+                    function, adding personality and a
+                    retro-vintage aestheticto your kitchen or workplace.
+                </p>
+            </div>
+        </div>
+
+        <div class="actions space">
+            <input type="button" value="Add to cart" class="primary_button signUp_button">
+        </div>
+
+    </section>
 
     <ul class="product_list">
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <label for="productDetail_panel">
+                <label for="productDetail_panel">
+            </label>
+                
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -113,7 +334,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -130,7 +354,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -148,7 +375,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -165,7 +395,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -183,7 +416,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -200,7 +436,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -218,7 +457,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -235,7 +477,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -253,7 +498,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -270,7 +518,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -288,7 +539,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -305,7 +559,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -323,7 +580,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -340,7 +600,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -358,7 +621,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -375,7 +641,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -393,7 +662,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -410,7 +682,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -428,7 +703,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_2.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -445,7 +723,10 @@
         </li>
 
         <li class="product_card">
-            <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            <label for="productDetail_panel">
+                <img src="http://www.warriorsofficial.com/wp-content/themes/cursos-platzi-2d7002aa56ccfa5d55a65bc35471f8a704c4cac1/assets/img/prod_1.png" alt="product_img">
+            </label>
+            
             <div class="product_info">
                 <p>
                     <strong>$ 120,00</strong><br>
@@ -463,4 +744,5 @@
         </li>
     </ul>
 </body>
+
 </html>
