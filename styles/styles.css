@@ -821,6 +821,69 @@ nav .items_right{
     background: var(--textInputField);
 }
 
+.orders_panel{
+    position: absolute;
+        
+    top: 0;
+    margin-top: 100rem;
+    width: 88%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    gap: 36rem;
+    
+    font-size: 20rem;
+}
+
+.orders_panel > strong{
+    font-size: 28rem;
+
+    padding-bottom: 20rem;
+    border-bottom: 1rem solid var(--gray_light);
+}
+
+.orders{
+    display: flex;
+    flex-direction: column;
+    gap: 36rem;
+}
+
+.orders li{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orders .info{
+    align-items: flex-start;
+    text-align: start;
+
+    gap: 4rem;
+}
+
+.orders .info p{
+    font-size: 18rem;
+}
+
+.orders .price{
+    display: flex;
+    align-items: center;
+    gap: 26rem;
+
+    font-size: 20rem;
+    color: var(--dark);
+}
+
+.orders .price i{
+    cursor: pointer;
+
+    font-size: 18rem;
+    color: var(--gray);
+}
+
 @media(max-width: 640px){
     .form2{
         position: absolute;
