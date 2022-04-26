@@ -985,7 +985,7 @@ nav .items_right{
         display: none;
     }
 
-    #shoping_cart:checked ~ nav .navbar_content a > .shoping{
+    #shoping_cart:checked ~ nav .navbar_content a > strong{
         display: block;
     }
 }
